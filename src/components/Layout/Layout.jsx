@@ -1,6 +1,7 @@
 import React from 'react';
-import { Suspense, useState, useEffect } from 'react';
+import { Suspense} from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+import Header from '../header/Header';
 
 const Layout = () => {
   return (
