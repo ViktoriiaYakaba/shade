@@ -1,20 +1,22 @@
 import React from 'react';
 import { Suspense} from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+
 import Header from '../header/Header';
+import style from './Layout.module.scss';
 
 const Layout = () => {
   return (
     <>
       
-      <div >
+      <div className={style.container} >
       <Header />
       <Suspense fallback={null}>
         <Outlet />
-      </Suspense>
+        </Suspense>
       </div>
     </>
   )
 }
 
-export default Layout
+export default Layout;
